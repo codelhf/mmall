@@ -39,8 +39,7 @@
         <property name="minIdle" value="${db.minIdle}"/>
         <!-- 最大建立连接等待时间。如果超过此时间将接到异常。设为－1表示无限制 -->
         <property name="maxWait" value="${db.maxWait}"/>
-        <!--#给出一条简单的sql语句进行验证 -->
-         <!--<property name="validationQuery" value="select getdate()" />-->
+        <!--设置自动提交 默认为true -->
         <property name="defaultAutoCommit" value="${db.defaultAutoCommit}"/>
         <!-- 回收被遗弃的（一般是忘了释放的）数据库连接到连接池中 -->
          <!--<property name="removeAbandoned" value="true" />-->
@@ -59,7 +58,7 @@
 
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
-        <property name="mapperLocations" value="classpath*:mappers/*Mapper.xml"></property>
+        <property name="mapperLocations" value="classpath*:mappers/*Mapper.xml"/>
 
         <!-- 分页插件 -->
         <property name="plugins">
