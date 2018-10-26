@@ -22,10 +22,6 @@ import javax.servlet.http.HttpSession;
 import java.util.Iterator;
 import java.util.Map;
 
-/**
- * Created by geely
- */
-
 @Controller
 @RequestMapping("/order/")
 public class OrderController {
