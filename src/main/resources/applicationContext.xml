@@ -19,7 +19,7 @@
 
     <!--二期新增spring schedule的时候新增的-->
     <context:property-placeholder location="classpath:datasource.properties" />
-    <task:annotation-driven/>
+    <task:annotation-driven />
 
     <!--导入dataSource配置-->
     <import resource="applicationContext-datasource.xml"/>
