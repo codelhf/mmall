@@ -7,9 +7,6 @@ import org.joda.time.format.DateTimeFormatter;
 
 import java.util.Date;
 
-/**
- * Created by geely
- */
 public class DateTimeUtil {
 
     //joda-time
@@ -56,6 +53,5 @@ public class DateTimeUtil {
         System.out.println(DateTimeUtil.strToDate("2010-01-01 11:11:11","yyyy-MM-dd HH:mm:ss"));
 
     }
-
 
 }

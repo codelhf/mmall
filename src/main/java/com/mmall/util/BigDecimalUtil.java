@@ -2,14 +2,7 @@ package com.mmall.util;
 
 import java.math.BigDecimal;
 
-/**
- * Created by geely
- */
 public class BigDecimalUtil {
-
-    private BigDecimalUtil(){
-
-    }
 
 
     public static BigDecimal add(double v1,double v2){
@@ -38,9 +31,5 @@ public class BigDecimalUtil {
 
         //除不尽的情况
     }
-
-
-
-
 
 }
